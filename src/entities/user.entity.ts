@@ -18,7 +18,7 @@ class User {
     @Column()
     phone: string
 
-    @Column({length: 30})
+    @Column()
     password: string
 
     @CreateDateColumn()
