@@ -1,7 +1,7 @@
 import { Column, Entity, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, ManyToOne } from "typeorm";
 import { User } from "./user.entity";
 
-@Entity("contacts")
+@Entity('contacts')
 class Contact{
 
     @PrimaryGeneratedColumn("uuid")

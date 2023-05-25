@@ -3,7 +3,7 @@ import { getRounds, hashSync } from 'bcryptjs'
 import { Column, Entity, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, BeforeInsert, BeforeUpdate, OneToMany } from "typeorm";
 import { Contact } from "./contact.entity";
 
-@Entity("users")
+@Entity('users')
 class User {
 
     @PrimaryGeneratedColumn("uuid")

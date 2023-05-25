@@ -1,5 +1,4 @@
 import { Repository } from "typeorm"
-import { hash } from "bcryptjs";
 
 import { AppDataSource } from "../data-source";
 import { User } from "../entities/user.entity";
@@ -21,11 +20,8 @@ const createUserService = async (data: TUserRequest): Promise<TUserResponse> => 
         throw new Error("Email already registered")
     }
 
-    const hashedPassword = await hash(password, 10)
-
     const user = userRepository.create({
-        ...data,
-        password: hashedPassword,
+        ...data
     })
 
     await userRepository.save(user)

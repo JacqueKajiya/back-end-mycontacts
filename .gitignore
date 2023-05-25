@@ -1,4 +1,6 @@
+.idea/
+.vscode/
 node_modules/
-dist/
-yarn.lock
-.env
+build/
+tmp/
+temp/
