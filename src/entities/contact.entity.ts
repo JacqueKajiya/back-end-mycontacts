@@ -5,7 +5,7 @@ import { User } from "./user.entity";
 class Contact{
 
     @PrimaryGeneratedColumn("uuid")
-    id: String
+    id: string
 
     @Column()
     name: string
