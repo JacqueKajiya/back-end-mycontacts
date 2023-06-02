@@ -1,16 +1,23 @@
 import { Repository } from "typeorm"
 import { User } from "../entities/user.entity"
 import { AppDataSource } from "../data-source"
+import { AppError } from "../errors/AppError"
 
-const listUserService = async (id:string) =>{
+const listUserService = async (): Promise<User[]> =>{
     const userRepository : Repository<User> = AppDataSource.getRepository(User)
 
-    const user = userRepository.findOne({
-        where: {id},
-        relations: { contacts: true}
+    const findUser = await userRepository.find({
+        select:[
+            "id",
+            "name",
+            "email",
+            "phone",
+            "createdAt",
+            "updatedAt"
+        ]
     })
 
-    return user
+    return findUser
 }
 
 export { listUserService }
