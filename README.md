@@ -112,7 +112,7 @@ Não requer corpo para fazer a requisição
 ```JSON
 {
 	"id": "b80883d4-8ee5-4501-b196-750952a21e47",
-  "name": "Aninha"
+  	"name": "Aninha"
 	"email": "ana123@mail.com",
 	"phone": "41998745612",
 }
@@ -164,10 +164,10 @@ Essas rotas requerem autenticação
 `POST /contacts -  REQUISIÇÃO`
 
 ```JSON
-{
-	"email": "eric@gmail.com",
-	"fullName": "Eric Padilha",
-	"phone": "41998234578"
+{	
+	"name": "Janaina"
+	"email": "janaina@mail.com",
+	"phone": "987654321"
 }
 ```
 
@@ -175,15 +175,10 @@ Essas rotas requerem autenticação
 
 ```JSON
 {
-	"email": "eric@gmail.com",
-	"fullName": "Eric Padilha",
+	"id": "b80883d4-8ee5-4501-b196-750952a21e47"
+	"name": "Janaina"
+	"email": "janaina@mail.com",
 	"phone": "41998234578",
-	"client": {
-		"id": "b80883d4-8ee5-4501-b196-750952a21e47"
-	},
-	"id": "d5003114-6145-459d-953c-bf5045e4e86b",
-	"createdAt": "2023-02-08T15:58:07.046Z",
-	"updatedAt": "2023-02-08T15:58:07.046Z"
 }
 ```
 
@@ -201,7 +196,7 @@ Não requer corpo para fazer a requisição
 [
 	{
 		"id": "62353c13-8abb-4b64-8ae6-3a79fe3ba10a",
-    "name": "Janaina"
+    		"name": "Janaina"
 		"email": "janaina@mail.com",
 		"phone": "987654321",
 	}
@@ -223,7 +218,7 @@ Não requer corpo para fazer a requisição
 ```JSON
 {
 	"id": "62353c13-8abb-4b64-8ae6-3a79fe3ba106a",
-  "name": "Janaina",
+  	"name": "Janaina",
 	"email": "janizete@mail.com",
 	"phone": "987654321",
 }
