@@ -55,7 +55,7 @@ Essa rota não requer autenticação
 
 ```JSON
 {
-  "name": "Aninha"
+  	"name": "Aninha"
 	"email": "ana@mail.com",
 	"password": "123456",
 	"phone": "123456789"
@@ -66,12 +66,10 @@ Essa rota não requer autenticação
 
 ```JSON
 {
-  "id": "b75169d4-1ee9-9869-b852-78845a33e12",
-  "name": "Aninha"
+  	"id": "b75169d4-1ee9-9869-b852-78845a33e12",
+ 	"name": "Aninha"
 	"email": "ana@mail.com",
 	"phone": "123456789",
-	"createdAt": "2023-06-04T21:31:11.301Z",
-	"updatedAt": "2023-06-04T21:31:11.301Z"
 }
 ```
 
@@ -89,9 +87,9 @@ Não requer corpo para fazer a requisição
 
 ```JSON
 { 
-  "id": "b75169d4-1ee9-9869-b852-78845a33e12",
+ 	"id": "b75169d4-1ee9-9869-b852-78845a33e12",
 	"name": "Aninha"
-  "email": "ana@mail.com",
+  	"email": "ana@mail.com",
 	"phone": "41998745612",
 	"contacts": []
 }
